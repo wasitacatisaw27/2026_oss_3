@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업 추가</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>수업 추가 </h1>
+
+        <nav>
+            <a href="index.html">Home </a>
+        </nav>
+
+    </header>
+
+    <main>
+<!--필수: 6개 이상의 data field 추가 입력란, 4개 이상의 유효성 검사, 최종 제출 전 alert-->
+
+        <form onsubmit="alert('추가하시겠습니까? 마지막으로 입력된 정보를 다시 확인해 주세요.'); return false;">
+            
+            <label> 수업명</label> <br>
+            <input type="text" name="className" required>  <br>
+           
+            <label>요일</label> <br>
+            <input type="text" name="day" required>  <br>
+
+            <label> 교시 </label> <br>
+            <input type="text" name="period" required> <br>
+
+            <label> 교수님</label><br>
+            <input type="text" name="professor" required><br>
+
+            <label>수업 필기 (링크)</label> <br>
+            <input type="url" name="memo"><br>
+
+            <label> 강의 정보 </label><br>
+            <input type="description"><br>
+
+            <!--유효성 검사를 위해 타입 submit로하기-->
+            <br>
+            <button type="submit">추가</button>
+
+
+        </form>
+    </main>
+
+
+</body>
+</html>
+

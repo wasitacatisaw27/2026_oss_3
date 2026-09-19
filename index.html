@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수업 관리 프로그램</title>
+
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+  
+<main>
+
+    <h1>수업 목록</h2>
+
+    <nav>
+    <a href="index.html"><p>HOME</a>
+    <a href="add.html"> <p>수업 추가</a>
+  </nav>
+
+
+<!--전체 데이터 필드(최소 6개) 중 4개 이상을 보여줄 것-->
+<!--전체 데이터: 수업명, 요일, 교시, 교수님, 강의정보, 수업필기-->
+<!--보여줄 데이터: 수업명, 요일, 교시, 교수님--> <!--나머지는 view 페이지에서-->
+        <table class="table",border="1">
+        <thead calss="one-class">
+            <tr>
+                <th>수업명</th>
+                <th>요일</th>
+                <th>교시</th>
+                <th>교수님</th>
+                <th>상세</th>
+            </tr>
+        </thead>
+
+
+        <tbody calss="content-calss">
+         
+
+           <tr>
+              <td> 오픈소스스튜디오</td>
+                <td>월요일, 목요일 </td>
+                <td> 1교시/1-2교시 </td>
+                <td>장소연 교수님</td>
+                <td>
+                    <a href="view.html"> 상세보기</a>
+                </td>
+           </tr>
+           <tr>
+              <td> 공학설계입문</td>
+                <td>화요일 </td>
+                <td> 1-2교시 </td>
+                <td>김광 교수님</td>
+                <td>
+                    <a href="view.html"> 상세보기</a>
+                </td>
+           </tr>
+           <tr>
+              <td> 웹 서비스 개발</td>
+                <td>화요일, 금요일 </td>
+                <td>4교시 </td>
+                <td>성금영 교수님</td>
+                <td>
+                    <a href="view.html"> 상세보기</a>
+                </td>
+           </tr>
+    </tbody>
+     </table>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        Copyright 2026 Class Manager
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
